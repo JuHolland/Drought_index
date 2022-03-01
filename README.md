@@ -16,13 +16,17 @@ Computes the drought index from **monthly** rasters
   - Weights
 
 Computed from R1H smoothed.
+
 We select R1H smoothed rasters within the months of interest (R1H_smoothed_sel)
+
 weights = R1H_smoothed_sel/sum(R1H_smoothed_sel)
 
   - Processing
  
 We compute the Qrfh, Qvim, Qtda, Qdlx and Qsos.
+
 We derive Qmulti.
+
 (see *SeasonalDroughtHazardIndex.pptx*)
   
  
@@ -30,5 +34,7 @@ We derive Qmulti.
  
  To run the script the user must run **within the Conda environment** the command line:
  *python drought_index.py date1 date2*
+ 
 with *date1* and *date2* the 'yearmonth' begin and end date of the analysis.
+
 Example: *python drought_index.py 202110 202112*
